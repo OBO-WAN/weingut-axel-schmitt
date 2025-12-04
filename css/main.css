@@ -677,7 +677,8 @@ header .logo a {
 	color: transparent;
 	width: 148px;
 	height: 68px;
-	background: url("/images/logo_axel-schmitt_transparent.png") no-repeat center;
+	/* background: url("/images/logo_axel-schmitt_transparent.png") no-repeat center; */
+	background: url("images/logo_axel-schmitt_transparent.png") no-repeat center; /*path for github*/
 	background-size: 126px 126px;
 }
 
@@ -1230,7 +1231,7 @@ ul#nav li.current a:after {
 /* control nav */
 #hero .flex-control-nav {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	display: block;
 	position: relative;
 	bottom: 0;
@@ -1316,8 +1317,24 @@ ul#nav li.current a:after {
 	#hero #more {
 		margin-left: -100px;
 	}
-
 }
+
+@media only screen and (min-width: 1025px) {
+  #hero {
+    text-align: center; /* center text inside the hero */
+  }
+
+  #hero-slider .slides .flex-caption {
+    margin: 0 auto;      /* center the whole caption block */
+    max-width: 800px;    /* or whatever width you like */
+  }
+
+  #hero-slider .slides .flex-caption h1,
+  #hero-slider .slides .flex-caption p {
+    text-align: center;  /* make sure both title + text are centered */
+  }
+}
+
 
 
 /** 
@@ -2119,6 +2136,26 @@ ul#nav li.current a:after {
 	display: block;
 	position: absolute;
 	bottom: -72px;
+}
+
+/* Center Flexslider pagination */
+.flex-control-nav.flex-control-paging {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 0 auto; /* adjust top spacing if needed */
+  float: none !important;   /* override theme float */
+  position: relative;       /* prevents odd theme positioning */
+}
+
+/* Make each dot inline so they center properly */
+.flex-control-nav.flex-control-paging li {
+  display: inline-block;
+  float: none !important;
+}
+
+/* Optional: spacing between dots */
+.flex-control-nav.flex-control-paging li a {
+  margin: 0 6px;
 }
 
 #testimonials .flex-control-nav li {
