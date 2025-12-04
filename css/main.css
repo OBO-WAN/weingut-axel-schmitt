@@ -1006,13 +1006,13 @@ ul#nav li.current a:after {
 	padding-bottom: 102px;
 }
 
-.hero-subline {
+/* .hero-subline {
   font: 20px/1.9 "merriweather-light", sans-serif;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
   width: 80%;
   max-width: 620px;
-}
+} */
 
 
 /* hero slider */
