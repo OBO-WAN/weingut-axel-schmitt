@@ -677,8 +677,8 @@ header .logo a {
 	color: transparent;
 	width: 148px;
 	height: 68px;
-	/* background: url("/images/logo_axel-schmitt_transparent.png") no-repeat center; */
-	background: url("images/logo_axel-schmitt_transparent.png") no-repeat center; /*path for github*/
+	background: url("/images/logo_axel-schmitt_transparent.png") no-repeat center;
+	/* background: url("images/logo_axel-schmitt_transparent.png") no-repeat center; path for github */
 	background-size: 126px 126px;
 }
 
