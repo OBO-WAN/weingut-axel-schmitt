@@ -41,7 +41,7 @@ body {
 }
 
 body {
-	background: #f7f4ee;
+	background: #929292;
     color: #333333;
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
@@ -568,10 +568,11 @@ hr {
 
 /* sections */
 .section-head h1 {
-	font: 15px/30px "raleway-heavy", sans-serif;
+	font: 28px/30px "raleway-heavy", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	color: #FFFFFF;
+	color: #e64e04;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 	margin-bottom: 30px;
 	margin-top: 18px;
 }
@@ -1333,6 +1334,7 @@ ul#nav li.current a:after {
   #hero-slider .slides .flex-caption p {
     text-align: center;  /* make sure both title + text are centered */
   }
+
 }
 
 
@@ -1788,8 +1790,8 @@ ul#nav li.current a:after {
 
 #aktuell {
 	background: #111417;
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	border-bottom: 1px solid #15191d;
 }
 
@@ -2550,7 +2552,7 @@ footer .info {
 footer .footer-logo {
 	width: 100px;
 	height: 23px;
-	background: url("../images/logoW@2x.png") no-repeat center;
+	background: url("../images/logo_axel-schmitt_transparent.png") no-repeat center;
 	background-size: 100px 23px;
 	margin: 0 auto 21px;
 	display: block;
@@ -2573,6 +2575,8 @@ footer .copyright {
 footer .copyright li {
 	display: inline-block;
 	padding: 0 5px;
+	color: #000;
+
 }
 
 /* social links */
@@ -2688,4 +2692,11 @@ footer .social-links li:first-child {
 	margin-left: 6px;
 	position: relative;
 	right: -5px;
+}
+
+.twelve.columns li {
+    color: white;
+	font-weight: 700;
+	font-size: x-large;
+	text-align: left;
 }
