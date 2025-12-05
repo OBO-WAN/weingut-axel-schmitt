@@ -40,7 +40,7 @@ body {
 
 body {
 	background: #929292;
-    color: #333333;
+	color: #333333;
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
 }
@@ -378,7 +378,7 @@ img.pull-left {
 	margin-top: -140px;
 
 	background: url("../images/logo_axel-schmitt_transparent.png") no-repeat center;
-    background-size: contain;
+	background-size: contain;
 
 	-webkit-animation: sk-rotateplane 3.2s infinite ease-in-out;
 	animation: sk-rotateplane 2.2s infinite ease-in-out;
@@ -649,7 +649,7 @@ header {
 
 header.opaque {
 	/* background: rgb(34, 32, 32); */
-	   background: linear-gradient(180deg, #a39237, #36311a);
+	background: linear-gradient(180deg, #a39237, #36311a);
 	/* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
@@ -1058,7 +1058,7 @@ ul#nav li.current a:after {
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 1.7;
-	text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);   
+	text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
 
 	/* for css animations */
 	filter: alpha(opacity=0);
@@ -1321,19 +1321,32 @@ ul#nav li.current a:after {
 }
 
 @media only screen and (min-width: 1025px) {
-  #hero {
-    text-align: center; /* center text inside the hero */
-  }
+	#hero {
+		text-align: center;
+		/* center text inside the hero */
+	}
 
-  #hero-slider .slides .flex-caption {
-    margin: 0 auto;      /* center the whole caption block */
-    max-width: 800px;    /* or whatever width you like */
-  }
+	@media only screen and (min-width: 1025px) {
+		#hero-slider .slides .flex-caption h1::after {
+			left: 50%;
+			margin-left: -50px;
+			/* half of the 100px line width */
+		}
+	}
 
-  #hero-slider .slides .flex-caption h1,
-  #hero-slider .slides .flex-caption p {
-    text-align: center;  /* make sure both title + text are centered */
-  }
+
+	#hero-slider .slides .flex-caption {
+		margin: 0 auto;
+		/* center the whole caption block */
+		max-width: 800px;
+		/* or whatever width you like */
+	}
+
+	#hero-slider .slides .flex-caption h1,
+	#hero-slider .slides .flex-caption p {
+		text-align: center;
+		/* make sure both title + text are centered */
+	}
 
 }
 
@@ -2142,22 +2155,25 @@ ul#nav li.current a:after {
 
 /* Center Flexslider pagination */
 .flex-control-nav.flex-control-paging {
-  width: 100%;
-  text-align: center;
-  margin: 20px auto 0 auto; /* adjust top spacing if needed */
-  float: none !important;   /* override theme float */
-  position: relative;       /* prevents odd theme positioning */
+	width: 100%;
+	text-align: center;
+	margin: 20px auto 0 auto;
+	/* adjust top spacing if needed */
+	float: none !important;
+	/* override theme float */
+	position: relative;
+	/* prevents odd theme positioning */
 }
 
 /* Make each dot inline so they center properly */
 .flex-control-nav.flex-control-paging li {
-  display: inline-block;
-  float: none !important;
+	display: inline-block;
+	float: none !important;
 }
 
 /* Optional: spacing between dots */
 .flex-control-nav.flex-control-paging li a {
-  margin: 0 6px;
+	margin: 0 6px;
 }
 
 #testimonials .flex-control-nav li {
@@ -2695,7 +2711,7 @@ footer .social-links li:first-child {
 }
 
 .twelve.columns li {
-    color: white;
+	color: white;
 	font-weight: 800;
 	font-size: large;
 	text-align: left;
