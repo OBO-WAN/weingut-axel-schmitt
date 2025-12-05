@@ -718,8 +718,10 @@ header .header-social li a:hover {
 
 @media only screen and (max-width:768px) {
 	header {
-		background: #a39237;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		/* background: #a39237; */
+		background: linear-gradient(88deg, #a39237, #877b43);
+		/* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+		border: none;
 	}
 
 	header .row {
@@ -861,7 +863,7 @@ ul#nav li.current a:after {
 		top: 50%;
 		bottom: auto;
 		left: auto;
-		background: #fdc501;
+		background: #060604;
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		-webkit-transition: all 0.3s ease-in-out;
